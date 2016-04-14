@@ -14,7 +14,7 @@ def secant(function, start1, start2, minerror, maxitir):
         error = xn-xprev
         print(xn, function(xn), error)
         i += 1
-
+    return xn
 def iteration(f, xn, xprev):
     return xn - f(xn) * ((xn-xprev) / (f(xn)-f(xprev)))
 

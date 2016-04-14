@@ -13,6 +13,7 @@ def newton(function, derivative, start, minerror, maxitir):
         error = xn-xprev
         print(xn, function(xn), error)
         i += 1
+    return xn
 def iteration(f, fprime, xn):
     return xn - f(xn)/fprime(xn)
 
